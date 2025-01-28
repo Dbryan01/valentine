@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #ff6f61;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #d9534f;
+}
+
+.heart {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Beautiful Flower Design */
+.flower {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 5;
+    transform: scale(1);
+    animation: flowerMovement 15s infinite alternate ease-in-out;
+}
+
+/* Stem styling */
+.stem {
+    width: 10px;
+    height: 180px;
+    background-color: #8b4513; /* Dark brown color for a more realistic stem */
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Leaf styling */
+.leaf {
+    width: 50px;
+    height: 30px;
+    background-color: #4caf50; /* Soft green color */
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.leaf.left {
+    top: 40px;
+    left: -25px;
+    transform: rotate(-45deg);
+}
+
+.leaf.right {
+    top: 40px;
+    right: -25px;
+    transform: rotate(45deg);
+}
+
+/* Flower head with beautiful petals */
+.flower-head {
+    position: absolute;
+    top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.flower-head .petal {
+    width: 50px;
+    height: 80px;
+    background-color: #ff66b2; /* Soft pink color */
+    border-radius: 50%;
+    position: absolute;
+    transform-origin: center center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flower-head .petal1 {
+    transform: rotate(0deg);
+}
+
+.flower-head .petal2 {
+    transform: rotate(45deg);
+}
+
+.flower-head .petal3 {
+    transform: rotate(90deg);
+}
+
+.flower-head .petal4 {
+    transform: rotate(135deg);
+}
+
+.flower-head .center {
+    width: 30px;
+    height: 30px;
+    background-color: #ffcc00; /* Golden center */
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes flowerMovement {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(20px) translateY(20px); /* Subtle floating movement */
+    }
+}
+
+/* Generate random flower placement with animation */
+.flower1 {
+    left: 10%;
+    bottom: 20%;
+}
+
+.flower2 {
+    left: 30%;
+    bottom: 30%;
+}
+
+.flower3 {
+    left: 50%;
+    bottom: 10%;
+}
+
+.flower4 {
+    left: 70%;
+    bottom: 50%;
+}
+
+.flower5 {
+    left: 85%;
+    bottom: 40%;
+}
+
+.flower6 {
+    left: 20%;
+    top: 60%;
+}
+
+.flower7 {
+    left: 60%;
+    top: 80%;
+}
+
+.flower8 {
+    left: 40%;
+    top: 20%;
+}
